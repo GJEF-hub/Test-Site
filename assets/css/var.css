@@ -1,0 +1,16 @@
+:root {
+  /**
+*Colors
+*/
+  --brnd-c: rgb(203, 201, 69);
+
+  /**
+*Typography
+*/
+  --rob: "Roboto";
+
+  /**
+*Spacing
+*/
+  --pd: 25px;
+}

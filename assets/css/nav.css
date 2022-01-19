@@ -1,0 +1,101 @@
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  margin: 0px;
+}
+
+/*-----------------------
+* NAVIGATION SECTION
+-------------------------*/
+
+/**Navbar Moblie screen*/
+
+/*------------Beginning of navbar nest--------*/
+.navbar {
+  background: #434143;
+  padding: var(--pd);
+  align-items: center;
+  display: block;
+}
+
+.navbar .nav-brand {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar span {
+  color: var(--brnd-c);
+  font-weight: normal;
+}
+
+/* hiding nav links */
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+/*------------End of navbar nest--------*/
+
+/**
+* Mobiles Navigation menu section
+*/
+
+.nav-close-button {
+  float: right;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.nav-close-button:hover {
+  background: var(--brnd-c);
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(203, 201, 69);
+}
+
+.nav-menu-button {
+  display: block;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 60%;
+  top: 0;
+  background: rgb(66, 69, 51);
+  opacity: 90%;
+  height: 100vh;
+  padding: 10px;
+}
+nav.nav-menu-button {
+  display: block;
+}
+
+ul.super-menu {
+  margin-top: 100px;
+  display: block;
+}
+
+.navbar-link.navbar-link {
+  text-align: right;
+  font-size: 18px;
+  padding: 10px;
+}
+.navbar-link:hover {
+  font-size: 22px;
+  opacity: 80%;
+  text-decoration: underline;
+  text-decoration-color: white;
+}

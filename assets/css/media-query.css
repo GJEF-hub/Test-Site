@@ -1,0 +1,34 @@
+/*-------------------------------------*\
+  #RESPONSIVE FOR 1200px
+\*-------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  .nav-menu-button,
+  .nav-close-button {
+    display: none;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    padding: 5px 5px;
+  }
+
+  ul.super-menu {
+    margin: 0px;
+  }
+  .nav-brand {
+    margin-top: 7px;
+  }
+}
