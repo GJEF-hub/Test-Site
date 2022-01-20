@@ -7,19 +7,24 @@
 /**Import variable stylesheet*/
 @import url(./var.css);
 
+body {
+  display: block;
+  margin: 0px 3px;
+  -webkit-font-smoothing: antialiased;
+}
 /**
 * Main container
 */
 
 .main-container {
-  background: #434143;
+  background: var(--gn-bg);
   margin: 0;
   font-family: var(--rob);
 }
 
 section {
   padding: var(--pd);
-  color: #ffffff;
+  color: var(--gn-fc);
 }
 
 .super-block {
@@ -42,7 +47,7 @@ section {
   font-size: 25px;
 }
 .test-site-codes {
-  width: 90%;
+  width: 80%;
   border-radius: 15px;
   cursor: pointer;
   align-items: center;
@@ -64,9 +69,9 @@ section {
   font-size: 16px;
 }
 .super-btn:hover {
-  border-color: var(--brnd-c);
+  border-color: white;
   background: none;
-  opacity: 70%;
+  opacity: 90%;
   border-width: thick;
   color: white;
 }
@@ -78,7 +83,7 @@ h1 {
 
 .features {
   margin: 0;
-  background: rgb(89, 92, 73);
+  background: var(--ts-bg);
 }
 .testimonials {
   padding-left: 5px;
@@ -86,7 +91,7 @@ h1 {
 }
 
 .testimonials li {
-  background: rgb(66, 69, 51);
+  background: var(--ts-img-bg);
   padding: 10px 5px;
   border-radius: 15px;
   width: 80%;
@@ -97,45 +102,109 @@ h1 {
 .testimonials li img {
   width: 60px;
   height: 60px;
-  border: 5px solid rgb(66, 69, 51);
+  border: 5px solid var(--ts-img-bg);
   border-radius: 50%;
   margin-top: -35px;
 }
 
+footer {
+  padding: 80px 25px 40px;
+}
+
 .footer-content {
   color: white;
-  margin: 25px;
+  margin: auto;
   display: flex;
+  flex-direction: column;
 }
 .footer-content .nav-brand {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 30px;
   text-decoration: none;
+  padding: 18px 0px 10px 10px;
+  margin: 10px 0px 0px 25px;
 }
+
+p.footer-desc {
+  margin: 5px 20px 25px 0px;
+  padding: 10px 0px 0px 0px;
+  text-align: left;
+  line-height: 25px;
+
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footer-links {
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+
+  gap: 50px;
+  align-items: flex-end;
+  list-style: none;
+}
+
 .footer-content .nav-brand span {
   color: var(--brnd-c);
   font-weight: normal;
 }
 
-.footer-content ul,
-li,
-a {
-  list-style: none;
-  color: white;
-  padding: 5px;
+.footer-list .sub {
+  margin-bottom: 20px;
 }
 
-.copyright-label {
-  text-align: center;
-  margin: 0px;
-  padding: 0px 0px 5px;
+.footer-links li a {
+  font-size: 14px;
+  color: white;
 }
-.footer-list .sub {
-  font-weight: bold;
+
+.footer-links li:hover a {
   color: var(--brnd-c);
 }
-/**Navbar Desktop screen*/
 
-/*---------------------------
-Main Section
-------------------------------*/
+.footer-links ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.social-link a {
+  display: inline-block;
+  color: var(--brnd-c);
+  padding: 35px 0px;
+  margin: 20px 0px 2px 25px;
+}
+
+.social-link ion-icon {
+  font-size: 25px;
+  margin-right: 0px;
+}
+
+/* copyright section */
+.copyright-label {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 12px;
+}
+hr {
+  height: 1px;
+  border: none;
+  background-color: var(--brnd-c);
+  opacity: 30%;
+}
+
+/*** ----------------------------------
+            Right Scrollbar Settings
+\*** ----------------------------------- ***/
+
+::-webkit-scrollbar {
+  background: transparent;
+  border-left: 1px solid var(--ts-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brnd-c);
+  border-radius: 5em;
+  border: 1px solid var(--ts-img-bg);
+}

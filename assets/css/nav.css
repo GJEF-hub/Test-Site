@@ -15,7 +15,7 @@ ul {
 
 /*------------Beginning of navbar nest--------*/
 .navbar {
-  background: #434143;
+  background: var(--gn-bg);
   padding: var(--pd);
   align-items: center;
   display: block;
@@ -23,7 +23,7 @@ ul {
 
 .navbar .nav-brand {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 30px;
   text-decoration: none;
   color: white;
 }
@@ -55,13 +55,13 @@ ul {
 }
 
 .nav-close-button:hover {
-  background: var(--brnd-c);
+  opacity: 60%;
 }
 
 .navbar-link {
   text-decoration: none;
   font-weight: bold;
-  color: rgb(203, 201, 69);
+  color: white;
 }
 
 .nav-menu-button {
@@ -73,9 +73,9 @@ nav {
   position: fixed;
   z-index: 999;
   width: 60%;
-  top: 0;
-  background: rgb(66, 69, 51);
-  opacity: 90%;
+  top: 0px;
+  background: var(--ts-img-bg);
+  opacity: 95%;
   height: 100vh;
   padding: 10px;
 }
@@ -84,18 +84,19 @@ nav.nav-menu-button {
 }
 
 ul.super-menu {
-  margin-top: 100px;
+  margin-top: 150px;
   display: block;
+  list-style: none;
 }
 
 .navbar-link.navbar-link {
   text-align: right;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 22px;
+  padding: 15px;
 }
 .navbar-link:hover {
-  font-size: 22px;
-  opacity: 80%;
+  font-size: 24px;
+  opacity: 90%;
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: var(--brnd-c);
 }

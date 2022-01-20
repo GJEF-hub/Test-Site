@@ -1,3 +1,7 @@
+/**
+ * copyright 2022 @TestSite by Godfrey Jeremiah (GJEF)
+ */
+
 /*-------------------------------------*\
   #RESPONSIVE FOR 1200px
 \*-------------------------------------*/
@@ -8,6 +12,7 @@
     display: none;
   }
 
+  /* ----NAVIGATION SECTION---- */
   .navbar nav {
     display: flex;
     justify-content: space-between;
@@ -15,20 +20,72 @@
     position: unset;
     height: auto;
     width: 100%;
-    padding: 0;
+    padding: 5px 50px;
+    position: fixed;
   }
 
   .navbar nav ul {
     display: flex;
-  }
-  .navbar nav a {
-    padding: 5px 5px;
+    list-style: none;
   }
 
   ul.super-menu {
-    margin: 0px;
+    margin: 15px 0px 0px 200px;
+    display: block;
   }
-  .nav-brand {
-    margin-top: 7px;
+
+  .super-menu .navbar-link {
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  .super-menu .navbar-link:hover {
+    font-weight: bold;
+    opacity: 75%;
+  }
+
+  /* ----BODY SECTION---- */
+
+  .col-left {
+    padding: 40px;
+    margin: 25px;
+  }
+  .test-site-codes {
+    width: 500px;
+    border-radius: 15px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .test-site-codes:hover {
+    width: 550px;
+  }
+
+  /* ----FOOTER SECTION---- */
+
+  .social-link a {
+    padding-left: 25px;
+    margin: 20px;
+  }
+
+  .copyright-label {
+    font-size: 18px;
+  }
+}
+
+/*---------------------------
+Breakpoint for Desktop screen 1080px
+------------------------------*/
+
+@media only screen and (min-width: 1080px) {
+  .main-container {
+    width: 1080px;
+    margin: 0px auto;
+  }
+  section {
+    padding: 30px 5px;
+  }
+  .main-content .super-block {
+    display: flex;
   }
 }
