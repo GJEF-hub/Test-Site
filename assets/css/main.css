@@ -9,9 +9,10 @@
 
 body {
   display: block;
-  margin: 0px 3px;
+  margin: 0px 1px;
   -webkit-font-smoothing: antialiased;
 }
+
 /**
 * Main container
 */
@@ -23,7 +24,7 @@ body {
 }
 
 section {
-  padding: var(--pd);
+  padding: 10em 4em;
   color: var(--gn-fc);
 }
 
@@ -34,12 +35,14 @@ section {
 .col-left {
   padding: var(--pd) 0px;
   margin-bottom: 15px;
+  /* position: relative; */
 }
 .emphasis {
   font-style: italic;
 }
 .col-right {
   padding: var(--pd) 0px;
+  /* position: absolute;*/
 }
 
 .sub-heading {
@@ -47,22 +50,22 @@ section {
   font-size: 25px;
 }
 .test-site-codes {
-  width: 80%;
+  width: 100%;
   border-radius: 15px;
   cursor: pointer;
   align-items: center;
   margin-top: 15px;
 }
-.test-site-codes:hover {
-  width: 95%;
-}
+/* .test-site-codes:hover {
+  width: 81%;
+} */
 
 .super-btn {
   background: var(--brnd-c);
-  display: block;
-  padding: 20px 50px;
+  border: 2px solid darkgray;
+  padding: 20px 60px;
   margin: 20px auto 20px auto;
-  border-radius: 20px;
+  border-radius: 40px;
   cursor: pointer;
   font-weight: bold;
   align-content: center;
@@ -72,19 +75,22 @@ section {
   border-color: white;
   background: none;
   opacity: 90%;
-  border-width: thick;
+
   color: white;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
   margin-top: 5px;
 }
 
 .features {
   margin: 0;
+  top: 3000px;
+
   background: var(--ts-bg);
 }
+
 .testimonials {
   padding-left: 5px;
   padding-top: 35px;
@@ -117,9 +123,10 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .footer-content .nav-brand {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   padding: 18px 0px 10px 10px;
   margin: 10px 0px 0px 25px;
@@ -127,7 +134,7 @@ footer {
 
 p.footer-desc {
   margin: 5px 20px 25px 0px;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0 0 0;
   text-align: left;
   line-height: 25px;
 
@@ -176,9 +183,17 @@ p.footer-desc {
   margin: 20px 0px 2px 25px;
 }
 
+.social-link a:hover {
+  color: white;
+}
+
 .social-link ion-icon {
   font-size: 25px;
   margin-right: 0px;
+}
+
+div .social-link {
+  padding-left: 40px;
 }
 
 /* copyright section */
@@ -186,7 +201,9 @@ p.footer-desc {
   text-align: center;
   padding-top: 40px;
   font-size: 12px;
+  color: white;
 }
+
 hr {
   height: 1px;
   border: none;
